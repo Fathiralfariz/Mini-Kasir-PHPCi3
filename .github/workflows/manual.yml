@@ -1,0 +1,26 @@
+name: Deploy fathir
+
+on:
+  workflow_dispatch:       # bisa dijalankan manual
+  push:
+    branches:
+      - main              # otomatis jalan saat push ke main
+
+jobs:
+  deploy:
+    name: Deploy ke Hosting
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Sinkronisasi File FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.1
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: /htdocs/
+          retries: 3
+          retryDelay: 10
