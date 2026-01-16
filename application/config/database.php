@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'ci3',
+	'hostname' => 'ftpupload.net',
+	'username' => 'if0_40921341',
+	'password' => 'H2JKav1L9kQFu',
+	'database' => 'mini-kasir',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

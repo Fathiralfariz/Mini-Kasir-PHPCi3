@@ -6,8 +6,8 @@ class Order extends CI_Controller {
     public function __construct()
     {
         parent::__construct();
-        $this->load->model(['Menu_model','Order_model']);
         $this->load->library('session');
+        $this->load->model(['Menu_model','Order_model']);
     }
 
 
