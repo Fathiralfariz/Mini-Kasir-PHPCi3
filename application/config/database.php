@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'ftpupload.net',
+	'hostname' => 'sql300.infinityfree.com',
 	'username' => 'if0_40921341',
 	'password' => 'H2JKav1L9kQFu',
 	'database' => 'if0_40921341_mycafe',
